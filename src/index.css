@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Inter', sans-serif; /* Ye font photo se 100% match karega */
+}
+
 @layer utilities {
-  .font-playfair {
-    font-family: 'Playfair Display', serif;
-  }
-  .font-raleway {
-    font-family: 'Raleway', sans-serif;
+  .text-paragraph {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em; /* Text ke beech ki halki spacing */
+    line-height: 1.6;
   }
 }
